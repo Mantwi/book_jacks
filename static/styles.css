@@ -4,16 +4,16 @@
 }
 
 .navbar {
-    padding: 0.5rem 1rem; 
+    padding: 0.5rem 1rem;
 }
 
 .navbar-brand img {
-    max-width: 50px;  
+    max-width: 50px;
     height: auto;
 }
 
 .nav-link {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -22,61 +22,123 @@
     border: none;
 }
 
-
 .btn-primary {
-    background-color: black !important;
-    color: white !important;
+    background-color: #FFD700 !important;    /* Changed from yellow to #FFD700 to match submit button */
+    color: black !important;
     font-weight: bold !important;
     border: none !important;
+    padding: 1.5rem 4rem;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 2rem;
+    min-width: 250px;
+}
+
+/* Keeping the hover state consistent with submit button */
+.btn-primary:hover {
+    background-color: #FFED4A !important;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+    .btn-primary {
+        margin-bottom: 3rem;
+        padding: 1.25rem 3rem;
+        font-size: 1.25rem;
+        min-width: 200px;
+    }
+}
+
+/* Enhanced submit button styling */
+form button[type="submit"] {
+    padding: 1.5rem 4rem !important;
+    font-size: 1.5rem !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold !important;
+    margin-bottom: 3rem;
+    min-width: 250px;
+    background-color: #FFD700 !important; /* More golden yellow for submit */
+}
+
+form button[type="submit"]:hover {
+    background-color: #FFED4A !important;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
 .btn-primary:hover {
-    background-color: #333 !important; 
+    background-color: #FFD700 !important;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
-
-.dropdown-menu .dropdown-item {
-    color: black;
-    font-weight: normal;
+/* Container spacing */
+.container {
+    padding-bottom: 4rem;
 }
 
-.dropdown-menu .dropdown-item:hover,
-.dropdown-menu .dropdown-item:focus {
-    background-color: black !important;
-    color: white !important;
-    font-weight: bold !important;
-}
-
-/* Form input styling */
+/* Form styling */
 .form-control {
-    max-width: 400px;  
+    max-width: 400px;
 }
 
 .form-control-file {
-    max-width: 400px;  
+    max-width: 400px;
 }
 
 textarea.form-control {
-    max-width: 400px;  
+    max-width: 400px;
 }
-
 
 .form-row .form-group {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
-
 
 .form-control, .form-control-file {
-    padding: 5px 10px;  
+    padding: 5px 10px;
 }
-
 
 .form-control, .form-control-file, textarea.form-control {
     max-width: 350px;
 }
 
 .large-text {
-    font-size: 1.5rem;  
-    line-height: 1.2;   
-    color: #555;       
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #555;
+}
+
+/* Responsive spacing adjustments */
+@media (max-width: 768px) {
+    .btn-primary {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        padding: 20px 40px;
+    }
+    
+    form button[type="submit"] {
+        margin-bottom: 4rem;
+        padding: 1.25rem 3rem !important;
+        font-size: 1.25rem !important;
+        min-width: 200px;
+    }
+    
+    .container {
+        padding-bottom: 5rem;
+    }
+    
+    .form-control, .form-control-file, textarea.form-control {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Additional bottom spacing for last elements */
+.form-group:last-of-type {
+    margin-bottom: 2rem;
 }
