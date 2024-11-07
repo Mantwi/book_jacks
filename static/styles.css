@@ -75,3 +75,8 @@ textarea.form-control {
     max-width: 350px;
 }
 
+.large-text {
+    font-size: 1.5rem;  
+    line-height: 1.2;   
+    color: #555;       
+}
